@@ -51,7 +51,7 @@ let les = [
     {english: "sūn sīmiǎo; famous Chinese herbalist" ,chinese: "孙思邈"},
     {english: "lǐ shízhēn; famous Chinese herbalist" ,chinese: "李时珍"}
 ]
-var table = document.getElementsByClassName("chars");
+var table = document.getElementsByClassName("table");
 generateTable(table, les);
     
 function generateTable(table, data) { // require a table element and data
@@ -59,7 +59,7 @@ function generateTable(table, data) { // require a table element and data
         let row = table[0].insertRow();
         for (key in element) { //access info in each array
             let cell = row.insertCell();
-            cell.className = "char"
+            cell.className = "col"
             let text = document.createTextNode(element[key]);
             cell.appendChild(text);
 

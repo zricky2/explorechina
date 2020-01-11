@@ -3,3 +3,34 @@
     max-width: 100px;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* for a transparent look*/
+    border-radius: 20px;
+  }
+  
+  .overlay-text {
+    color: whitesmoke;
+    font-size: 40px;
+    font-style: oblique;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .carousel:hover .overlay{
+    display: block;
+    opacity: 1;
+  }

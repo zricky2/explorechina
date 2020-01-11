@@ -4,55 +4,56 @@
         <title>Explore China</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="lessons.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <meta name="description" content="Chinese">
     </head>
 
     <body>
-      <div class="container">
-        <nav class= "navwrapper"> 
-            <div class="leftside">
-                <div class= "home"> 
-                    <a class= "explorechina" href= "../Home/index.html"><img src="../images/logo.png"></a> 
-                </div>   
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand"><img class= "explore" src="../images/exploreChina.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Language
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../Language/beginner.html">Beginner</a>
+                    <a class="dropdown-item" href="../Language/intermediate.html">Intermediate</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    China
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../China/food.html">Food</a>
+                    <a class="dropdown-item" href="../China/geography.html">Geography</a>
+                    <a class="dropdown-item" href="../China/ideas.html">Ideas</a>
+                    <a class="dropdown-item" href="../China/traditions.html">Traditions</a>
+                  </div>
+                </li>
+              </ul>
             </div>
-            
-            <div class="rightside">
-                    <ul>  
-                        <div class = "dropdown">
-                            <button class = "dropbutton">Language</button> 
-                                <div class = "dropdown-content">
-                                    <a href= "../Language/beginner.html">Beginner</a> 
-                                    <!--To link a file in a differnent folder, 
-                                    use ../ to access parent directory then go back down to the subfolder-->
-                                    <a href= "../Language/intermediate.html">Intermediate</a>
-                                </div>
-                        </div>
-                        <div class = "dropdown">
-                            <button class = "dropbutton">China</button>
-                                <div class = "dropdown-content">
-                                    <a href= "../China/geography.html">Geography</a> 
-                                    <a href= "../China/traditions.html">Traditions</a> 
-                                    <a href= "../China/food.html">Food</a> 
-                                    <a href= "../China/ideas.html">Ideas</a> 
-                                </div>
-                        </div>
-                    </ul> 
-            </div>            
-        </nav> 
-    </div>  
+          </nav>
 <!--End of the Navigation bar-->
     <div class ="mainContent">
-        <div class="topic"><br>Topic</div>
+        <div class="topic"><br>Topic: Chinese Names</div>
         <div class = "voc"> 
             <div class = "section"><br>Vocabulary</div>
-            <table class = "chars" >
-            </table>
+            <table class="table table-hover table-light"></table>
         </div>
-        <div class = "read">
-            <div class = "section"><br>Reading</div>
-            <p>Story</p>
-        </div>
+        <iframe src="https://quizlet.com/426668110/match/embed?i=um9vw&x=1jj1" height="500" width="100%" style="border:0"></iframe>
         
     </div>
     <script type="text/javascript" language = "JavaScript" src="lesson1.js"></script>

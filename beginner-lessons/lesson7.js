@@ -55,7 +55,7 @@ let les = [
     {english: "xièxie (thank you)" ,chinese: "谢谢"}
 ]
 
-var table = document.getElementsByClassName("chars");
+var table = document.getElementsByClassName("table");
 generateTable(table, les);
     
 function generateTable(table, data) { // require a table element and data
@@ -63,7 +63,7 @@ function generateTable(table, data) { // require a table element and data
         let row = table[0].insertRow();
         for (key in element) { //access info in each array
             let cell = row.insertCell();
-            cell.className = "char"
+            cell.className = "col"
             let text = document.createTextNode(element[key]);
             cell.appendChild(text);
 
