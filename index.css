@@ -14,7 +14,6 @@
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.5); /* for a transparent look*/
-    border-radius: 20px;
 
   }
   
